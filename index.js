@@ -36,7 +36,7 @@ class Sprite {
         this.position.y += this.velocity.y
         this.velocity.y += gravity               // lil bit of NLM
 
-        if (this.position.y + this.height >= canvas.height){       // here (this.position.y + this.height == canvas.height) will not work ... think why ?
+        if (this.position.y + this.height >= canvas.height){       // here (this.position.y + this.height == canvas.height) will not work always... think why ?
             this.velocity.y = 0
         } 
     }
